@@ -1,0 +1,31 @@
+[package]
+name = "hmmlearn-rs"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.78"
+description = "Hidden Markov Models with categorical, Gaussian, GMM, Poisson, and multinomial emissions, trained by Expectation–Maximization or variational inference. A native Rust port of Python's hmmlearn (no LAPACK/BLAS)."
+authors = ["Matic Conradi"]
+license = "BSD-3-Clause"
+repository = "https://github.com/MaticConradi/hmmlearn-rs"
+documentation = "https://docs.rs/hmmlearn-rs"
+readme = "README.md"
+keywords = ["hmm", "markov", "machine-learning", "statistics", "hmmlearn"]
+categories = ["science", "mathematics", "algorithms"]
+exclude = [
+    "/hmmlearn",
+    "/tools",
+    "/.github",
+    "/.DS_Store",
+    "**/.DS_Store",
+]
+
+[lib]
+name = "hmmlearn"
+
+[dependencies]
+ndarray = "0.15.6"
+nalgebra = "0.32"
+libm = "0.2"
+
+[dev-dependencies]
+approx = "0.5"
